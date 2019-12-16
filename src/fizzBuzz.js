@@ -1,8 +1,11 @@
-const fizz = (number) => {
-    if (number%3 === 0){
+const fizzbuzz = (number) => {
+    if (number%3 === 0) {
         return "Fizz";
+    } else if (number%5===0) {
+        return "Buzz";
     } else
-    return number.toString();
+        return number.toString();
 };
 
-module.exports = fizz;
+
+module.exports.fizzbuzz = fizzbuzz;
